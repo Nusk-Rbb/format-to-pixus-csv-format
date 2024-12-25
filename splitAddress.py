@@ -20,6 +20,8 @@ def main():
     input_file = "address2025.csv"
     output_file = "pixus_new_receivers.csv"
     # CSVファイルを読み込む
+    # JISで読み込むな、JISで書き込みなPIXUSで読み込めない
+    # Fuck JIS!!!!!!!
     input_df = pd.read_csv(input_file)
     output_df = pd.read_csv(output_file)
 
